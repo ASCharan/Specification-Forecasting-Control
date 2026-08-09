@@ -25,8 +25,6 @@ python scripts/09_reward_diagnostics.py
 python scripts/10_traffic_informativeness.py --city Delhi --horizon 24
 ```
 
-Or `make all`. For the full submission sequence see `RERUN_MANIFEST.md`.
-
 ## Repository layout
 
 ```
