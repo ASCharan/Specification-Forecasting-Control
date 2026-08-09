@@ -80,21 +80,6 @@ This matters more than it sounds. Under this convention `aqi_lag1` is exactly th
 
 ---
 
-## Reproducing the reported results
-
-```bash
-make data
-make forecast        # tables 1-5
-make control         # table 6
-make sensitivity     # reward-regime and dispersion-closure studies
-```
-
-Every script writes a JSON to `results/` containing the full config, per-seed metrics and wall-clock timings, so a run is auditable after the fact. `results/RUNLOG.md` records the verification run that produced the bundled checkpoints.
-
-The CPCB parquet (15 MB) and the three derived city series are bundled under `data/` so the repository replicates offline. If you push to GitHub, either track `data/raw/*.parquet` with Git LFS or drop it and let `scripts/01_build_dataset.py` fetch it on first run.
-
----
-
 ## Citation
 
 ```bibtex
