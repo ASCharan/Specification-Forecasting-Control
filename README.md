@@ -1,3 +1,5 @@
+**UrbanClimate-RL** 
+
 * Forecasting - hourly AQI prediction for Delhi, Mumbai and Kolkata at 1 h and 24 h horizons, comparing a Neural-ODE forecaster (C-Mod) against ten baselines on real CPCB observations.
 * Control - a PPO–GAE agent acting on signal timing, speed limits and emission-zone enforcement inside a coupled traffic–pollution simulator.
 
