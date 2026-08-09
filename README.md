@@ -101,8 +101,8 @@ The CPCB parquet (15 MB) and the three derived city series are bundled under `da
 
 ```bibtex
 @article{saicharan2026urbanclimaterl,
-  title  = {Forecast horizon governs which air-quality models are useful
-            for urban pollution control},
+  title  = {Specification, not architecture, governs learned\\
+air-quality forecasting and control},
   author = {Sai Charan, A and Harshitha, Sunkara and Debnath, Ramit},
   year   = {2026}
 }
