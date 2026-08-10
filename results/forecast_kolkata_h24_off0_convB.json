@@ -1,0 +1,94 @@
+{
+  "config": {
+    "city": "Kolkata",
+    "horizon": 24,
+    "seeds": [
+      0
+    ],
+    "models": [
+      "cmod",
+      "lstm"
+    ],
+    "epochs": 100,
+    "skip_sarima": true,
+    "lag_offset": 0,
+    "align": true,
+    "no_met": false,
+    "no_traffic": false,
+    "tag": "convB",
+    "smoke": false,
+    "ckpt_dir": "checkpoints"
+  },
+  "lag_offset": 0,
+  "aligned": true,
+  "n_scored": 2437,
+  "results": {
+    "climatology": {
+      "rmse": 84.46855163574219,
+      "mae": 64.56027221679688,
+      "r2": -0.04736540043930004
+    },
+    "persistence": {
+      "rmse": 53.24649429321289,
+      "mae": 37.64546585083008,
+      "r2": 0.5838114575060618
+    },
+    "seasonal_naive": {
+      "rmse": 53.24649429321289,
+      "mae": 37.64546585083008,
+      "r2": 0.5838114575060618
+    },
+    "ridge": {
+      "rmse": 49.81257247924805,
+      "mae": 36.24620056152344,
+      "r2": 0.6357613329606213
+    },
+    "cmod": {
+      "rmse_mean": 49.850284576416016,
+      "rmse_std": 0.0,
+      "rmse_min": 49.850284576416016,
+      "rmse_max": 49.850284576416016,
+      "mae_mean": 36.40672302246094,
+      "r2_mean": 0.6352095930557854,
+      "train_seconds_mean": 17.72,
+      "epochs_run_mean": 19.0,
+      "n_params": 4513,
+      "per_seed": [
+        {
+          "rmse": 49.850284576416016,
+          "mae": 36.40672302246094,
+          "r2": 0.6352095930557854,
+          "epochs_run": 19,
+          "train_seconds": 17.72,
+          "n_params": 4513
+        }
+      ]
+    },
+    "lstm": {
+      "rmse_mean": 53.97409439086914,
+      "rmse_std": 0.0,
+      "rmse_min": 53.97409439086914,
+      "rmse_max": 53.97409439086914,
+      "mae_mean": 38.80786895751953,
+      "r2_mean": 0.5723595041162812,
+      "train_seconds_mean": 16.46,
+      "epochs_run_mean": 17.0,
+      "n_params": 19009,
+      "per_seed": [
+        {
+          "rmse": 53.97409439086914,
+          "mae": 38.80786895751953,
+          "r2": 0.5723595041162812,
+          "epochs_run": 17,
+          "train_seconds": 16.46,
+          "n_params": 19009
+        }
+      ]
+    }
+  },
+  "seconds": {
+    "ridge": 0.004,
+    "cmod seed0": 19.5,
+    "lstm seed0": 16.545
+  }
+}
