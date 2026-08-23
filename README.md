@@ -79,14 +79,3 @@ Lags are indexed from prediction time, not target time. At row `t`, the model kn
 This matters more than it sounds. Under this convention `aqi_lag1` is exactly the persistence forecast at h=1, which lets the naive baselines be validated against the learned models on identical inputs. Shifting by one more step silently withholds the most recent observation from the tabular models while the windowed sequence models still see it, and the comparison stops being fair. The correctness check is in `tests/test_smoke.py`; a quick manual version is that `persistence` must equal the `aqi_lag1` column at h=1.
 
 ---
-
-## Citation
-
-```bibtex
-@article{saicharan2026urbanclimaterl,
-  title  = {Specification, not architecture, governs learned\\
-air-quality forecasting and control},
-  author = {Sai Charan, A and Harshitha, Sunkara and Debnath, Ramit},
-  year   = {2026}
-}
-```
