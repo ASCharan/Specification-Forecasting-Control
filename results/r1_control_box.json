@@ -1,0 +1,685 @@
+{
+ "config": {
+  "closures": [
+   "box"
+  ],
+  "episodes": 300,
+  "sweep_episodes": 3,
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "eval_episodes": 50,
+  "out": "results/r1_control_box.json"
+ },
+ "box_emission_scale": 1.22,
+ "box": {
+  "closure": "box",
+  "policy_table": {
+   "none": {
+    "avg_reward": -0.958284824610519,
+    "cost": 0.0,
+    "mean_pm25": 66.34681401828722,
+    "reduction_pct": 0.0
+   },
+   "random": {
+    "avg_reward": -0.7194895164607128,
+    "cost": 1.2649843783901562,
+    "mean_pm25": 42.70880730037393,
+    "reduction_pct": 35.6
+   },
+   "half": {
+    "avg_reward": -0.6992321914239616,
+    "cost": 1.118033988749895,
+    "mean_pm25": 42.73147163268151,
+    "reduction_pct": 35.6
+   },
+   "max": {
+    "avg_reward": -0.6269665878510957,
+    "cost": 2.23606797749979,
+    "mean_pm25": 26.8170558436287,
+    "reduction_pct": 59.6
+   },
+   "ppo": {
+    "avg_reward": -0.6108292468779492,
+    "avg_reward_sd": 0.004146864502205862,
+    "cost": 1.9828154227073387,
+    "cost_sd": 0.07800119307096151,
+    "mean_pm25": 28.633078378749747,
+    "mean_pm25_sd": 0.6042471909270545,
+    "per_seed": [
+     {
+      "avg_reward": -0.6049715650485742,
+      "cost": 1.8725082597032356,
+      "mean_pm25": 29.483191011118834
+     },
+     {
+      "avg_reward": -0.6135123226835566,
+      "cost": 2.0386946234138055,
+      "mean_pm25": 28.13283306184215
+     },
+     {
+      "avg_reward": -0.6140038529017164,
+      "cost": 2.0372433850049747,
+      "mean_pm25": 28.28321106328826
+     }
+    ],
+    "reduction_pct": 56.8,
+    "reduction_pct_sd": 0.9
+   }
+  },
+  "return_sd_mean": 1.7012138635702156,
+  "return_sd_per_seed": [
+   1.7076266057191902,
+   1.5829049165958944,
+   1.8131100683955623
+  ],
+  "diurnal": {
+   "profile": [
+    92.53,
+    59.49,
+    36.78,
+    24.86,
+    20.75,
+    22.6,
+    30.36,
+    41.75,
+    51.65,
+    55.41,
+    49.5,
+    40.48,
+    33.47,
+    29.16,
+    29.18,
+    35.11,
+    48.72,
+    72.72,
+    103.87,
+    133.35,
+    156.07,
+    161.1,
+    148.9,
+    124.56
+   ],
+   "hour_of_min": 4,
+   "hour_of_max": 21,
+   "min": 20.75,
+   "max": 161.1
+  },
+  "channels": {
+   "none": 66.49590054447003,
+   "traffic_only": 33.51727345115553,
+   "enforcement_only": 52.19203123603755,
+   "both": 26.86316950440738,
+   "traffic_only_reduction_pct": 49.6,
+   "enforcement_only_reduction_pct": 21.5,
+   "both_reduction_pct": 59.6
+  },
+  "weighting_map": {
+   "0.20|0.01": {
+    "w1": 0.2,
+    "w3": 0.01,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.13690905426792194,
+    "regime": "active"
+   },
+   "0.20|0.02": {
+    "w1": 0.2,
+    "w3": 0.02,
+    "u_star": 0.95,
+    "gain_over_inaction": 0.08749723189475475,
+    "regime": "active"
+   },
+   "0.20|0.05": {
+    "w1": 0.2,
+    "w3": 0.05,
+    "u_star": 0.3,
+    "gain_over_inaction": 0.03190998406599996,
+    "regime": "active"
+   },
+   "0.20|0.10": {
+    "w1": 0.2,
+    "w3": 0.1,
+    "u_star": 0.15,
+    "gain_over_inaction": 0.015792395812008087,
+    "regime": "active"
+   },
+   "0.20|0.15": {
+    "w1": 0.2,
+    "w3": 0.15,
+    "u_star": 0.1,
+    "gain_over_inaction": 0.010877599859413889,
+    "regime": "active"
+   },
+   "0.20|0.20": {
+    "w1": 0.2,
+    "w3": 0.2,
+    "u_star": 0.1,
+    "gain_over_inaction": 0.008377599859413887,
+    "regime": "active"
+   },
+   "0.20|0.30": {
+    "w1": 0.2,
+    "w3": 0.3,
+    "u_star": 0.05,
+    "gain_over_inaction": 0.0056193554798042444,
+    "regime": "active"
+   },
+   "0.20|0.40": {
+    "w1": 0.2,
+    "w3": 0.4,
+    "u_star": 0.05,
+    "gain_over_inaction": 0.004369355479804271,
+    "regime": "active"
+   },
+   "0.30|0.01": {
+    "w1": 0.3,
+    "w3": 0.01,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.203988169868605,
+    "regime": "active"
+   },
+   "0.30|0.02": {
+    "w1": 0.3,
+    "w3": 0.02,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.1539881698686053,
+    "regime": "active"
+   },
+   "0.30|0.05": {
+    "w1": 0.3,
+    "w3": 0.05,
+    "u_star": 0.5,
+    "gain_over_inaction": 0.06685533893605233,
+    "regime": "active"
+   },
+   "0.30|0.10": {
+    "w1": 0.3,
+    "w3": 0.1,
+    "u_star": 0.25,
+    "gain_over_inaction": 0.035312161919536844,
+    "regime": "active"
+   },
+   "0.30|0.15": {
+    "w1": 0.3,
+    "w3": 0.15,
+    "u_star": 0.15,
+    "gain_over_inaction": 0.02366787277686766,
+    "regime": "active"
+   },
+   "0.30|0.20": {
+    "w1": 0.3,
+    "w3": 0.2,
+    "u_star": 0.15,
+    "gain_over_inaction": 0.018042872776867558,
+    "regime": "active"
+   },
+   "0.30|0.30": {
+    "w1": 0.3,
+    "w3": 0.3,
+    "u_star": 0.1,
+    "gain_over_inaction": 0.012552875622530435,
+    "regime": "active"
+   },
+   "0.30|0.40": {
+    "w1": 0.3,
+    "w3": 0.4,
+    "u_star": 0.05,
+    "gain_over_inaction": 0.009047417082478193,
+    "regime": "active"
+   },
+   "0.40|0.01": {
+    "w1": 0.4,
+    "w3": 0.01,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.27106728546928716,
+    "regime": "active"
+   },
+   "0.40|0.02": {
+    "w1": 0.4,
+    "w3": 0.02,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.22106728546928744,
+    "regime": "active"
+   },
+   "0.40|0.05": {
+    "w1": 0.4,
+    "w3": 0.05,
+    "u_star": 0.65,
+    "gain_over_inaction": 0.10975324199743852,
+    "regime": "active"
+   },
+   "0.40|0.10": {
+    "w1": 0.4,
+    "w3": 0.1,
+    "u_star": 0.3,
+    "gain_over_inaction": 0.06045812908025189,
+    "regime": "active"
+   },
+   "0.40|0.15": {
+    "w1": 0.4,
+    "w3": 0.15,
+    "u_star": 0.25,
+    "gain_over_inaction": 0.04135453816758289,
+    "regime": "active"
+   },
+   "0.40|0.20": {
+    "w1": 0.4,
+    "w3": 0.2,
+    "u_star": 0.15,
+    "gain_over_inaction": 0.03154334974172518,
+    "regime": "active"
+   },
+   "0.40|0.30": {
+    "w1": 0.4,
+    "w3": 0.3,
+    "u_star": 0.1,
+    "gain_over_inaction": 0.02172815138564521,
+    "regime": "active"
+   },
+   "0.40|0.40": {
+    "w1": 0.4,
+    "w3": 0.4,
+    "u_star": 0.1,
+    "gain_over_inaction": 0.016728151385645262,
+    "regime": "active"
+   },
+   "0.50|0.01": {
+    "w1": 0.5,
+    "w3": 0.01,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.338146401069971,
+    "regime": "active"
+   },
+   "0.50|0.02": {
+    "w1": 0.5,
+    "w3": 0.02,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.28814640106997097,
+    "regime": "active"
+   },
+   "0.50|0.05": {
+    "w1": 0.5,
+    "w3": 0.05,
+    "u_star": 0.75,
+    "gain_over_inaction": 0.1621020381836168,
+    "regime": "active"
+   },
+   "0.50|0.10": {
+    "w1": 0.5,
+    "w3": 0.1,
+    "u_star": 0.4,
+    "gain_over_inaction": 0.0898668830595225,
+    "regime": "active"
+   },
+   "0.50|0.15": {
+    "w1": 0.5,
+    "w3": 0.15,
+    "u_star": 0.3,
+    "gain_over_inaction": 0.06348220158737894,
+    "regime": "active"
+   },
+   "0.50|0.20": {
+    "w1": 0.5,
+    "w3": 0.2,
+    "u_star": 0.2,
+    "gain_over_inaction": 0.048663677091952295,
+    "regime": "active"
+   },
+   "0.50|0.30": {
+    "w1": 0.5,
+    "w3": 0.3,
+    "u_star": 0.15,
+    "gain_over_inaction": 0.03379382670658582,
+    "regime": "active"
+   },
+   "0.50|0.40": {
+    "w1": 0.5,
+    "w3": 0.4,
+    "u_star": 0.1,
+    "gain_over_inaction": 0.025903427148761926,
+    "regime": "active"
+   },
+   "0.60|0.01": {
+    "w1": 0.6,
+    "w3": 0.01,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.40522551667065176,
+    "regime": "active"
+   },
+   "0.60|0.02": {
+    "w1": 0.6,
+    "w3": 0.02,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.3552255166706513,
+    "regime": "active"
+   },
+   "0.60|0.05": {
+    "w1": 0.6,
+    "w3": 0.05,
+    "u_star": 0.8,
+    "gain_over_inaction": 0.21875638105129191,
+    "regime": "active"
+   },
+   "0.60|0.10": {
+    "w1": 0.6,
+    "w3": 0.1,
+    "u_star": 0.45,
+    "gain_over_inaction": 0.12423419668085256,
+    "regime": "active"
+   },
+   "0.60|0.15": {
+    "w1": 0.6,
+    "w3": 0.15,
+    "u_star": 0.3,
+    "gain_over_inaction": 0.08900627409450357,
+    "regime": "active"
+   },
+   "0.60|0.20": {
+    "w1": 0.6,
+    "w3": 0.2,
+    "u_star": 0.25,
+    "gain_over_inaction": 0.06906429066367592,
+    "regime": "active"
+   },
+   "0.60|0.30": {
+    "w1": 0.6,
+    "w3": 0.3,
+    "u_star": 0.15,
+    "gain_over_inaction": 0.04729430367144272,
+    "regime": "active"
+   },
+   "0.60|0.40": {
+    "w1": 0.6,
+    "w3": 0.4,
+    "u_star": 0.15,
+    "gain_over_inaction": 0.03604430367144207,
+    "regime": "active"
+   },
+   "0.70|0.01": {
+    "w1": 0.7,
+    "w3": 0.01,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.4723046322713349,
+    "regime": "active"
+   },
+   "0.70|0.02": {
+    "w1": 0.7,
+    "w3": 0.02,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.42230463227133563,
+    "regime": "active"
+   },
+   "0.70|0.05": {
+    "w1": 0.7,
+    "w3": 0.05,
+    "u_star": 0.85,
+    "gain_over_inaction": 0.27739756698156903,
+    "regime": "active"
+   },
+   "0.70|0.10": {
+    "w1": 0.7,
+    "w3": 0.1,
+    "u_star": 0.5,
+    "gain_over_inaction": 0.16272969211801114,
+    "regime": "active"
+   },
+   "0.70|0.15": {
+    "w1": 0.7,
+    "w3": 0.15,
+    "u_star": 0.35,
+    "gain_over_inaction": 0.1164729182254497,
+    "regime": "active"
+   },
+   "0.70|0.20": {
+    "w1": 0.7,
+    "w3": 0.2,
+    "u_star": 0.3,
+    "gain_over_inaction": 0.09203034660163167,
+    "regime": "active"
+   },
+   "0.70|0.30": {
+    "w1": 0.7,
+    "w3": 0.3,
+    "u_star": 0.2,
+    "gain_over_inaction": 0.06398753752613962,
+    "regime": "active"
+   },
+   "0.70|0.40": {
+    "w1": 0.7,
+    "w3": 0.4,
+    "u_star": 0.15,
+    "gain_over_inaction": 0.049544780636301744,
+    "regime": "active"
+   },
+   "0.80|0.01": {
+    "w1": 0.8,
+    "w3": 0.01,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.5393837478720185,
+    "regime": "active"
+   },
+   "0.80|0.02": {
+    "w1": 0.8,
+    "w3": 0.02,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.48938374787201805,
+    "regime": "active"
+   },
+   "0.80|0.05": {
+    "w1": 0.8,
+    "w3": 0.05,
+    "u_star": 0.95,
+    "gain_over_inaction": 0.3405749068729321,
+    "regime": "active"
+   },
+   "0.80|0.10": {
+    "w1": 0.8,
+    "w3": 0.1,
+    "u_star": 0.55,
+    "gain_over_inaction": 0.2044292570653362,
+    "regime": "active"
+   },
+   "0.80|0.15": {
+    "w1": 0.8,
+    "w3": 0.15,
+    "u_star": 0.4,
+    "gain_over_inaction": 0.14832103074439618,
+    "regime": "active"
+   },
+   "0.80|0.20": {
+    "w1": 0.8,
+    "w3": 0.2,
+    "u_star": 0.3,
+    "gain_over_inaction": 0.11755441910875741,
+    "regime": "active"
+   },
+   "0.80|0.30": {
+    "w1": 0.8,
+    "w3": 0.3,
+    "u_star": 0.2,
+    "gain_over_inaction": 0.08164946774323423,
+    "regime": "active"
+   },
+   "0.80|0.40": {
+    "w1": 0.8,
+    "w3": 0.4,
+    "u_star": 0.15,
+    "gain_over_inaction": 0.06304525760116109,
+    "regime": "active"
+   },
+   "0.90|0.01": {
+    "w1": 0.9,
+    "w3": 0.01,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.606462863472701,
+    "regime": "active"
+   },
+   "0.90|0.02": {
+    "w1": 0.9,
+    "w3": 0.02,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.5564628634727008,
+    "regime": "active"
+   },
+   "0.90|0.05": {
+    "w1": 0.9,
+    "w3": 0.05,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.4064628634726999,
+    "regime": "active"
+   },
+   "0.90|0.10": {
+    "w1": 0.9,
+    "w3": 0.1,
+    "u_star": 0.65,
+    "gain_over_inaction": 0.2485274879425291,
+    "regime": "active"
+   },
+   "0.90|0.15": {
+    "w1": 0.9,
+    "w3": 0.15,
+    "u_star": 0.45,
+    "gain_over_inaction": 0.1824124374472782,
+    "regime": "active"
+   },
+   "0.90|0.20": {
+    "w1": 0.9,
+    "w3": 0.2,
+    "u_star": 0.35,
+    "gain_over_inaction": 0.14432557904972954,
+    "regime": "active"
+   },
+   "0.90|0.30": {
+    "w1": 0.9,
+    "w3": 0.3,
+    "u_star": 0.25,
+    "gain_over_inaction": 0.10281641940781805,
+    "regime": "active"
+   },
+   "0.90|0.40": {
+    "w1": 0.9,
+    "w3": 0.4,
+    "u_star": 0.2,
+    "gain_over_inaction": 0.07931139796032816,
+    "regime": "active"
+   },
+   "1.00|0.01": {
+    "w1": 1.0,
+    "w3": 0.01,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.6735419790733824,
+    "regime": "active"
+   },
+   "1.00|0.02": {
+    "w1": 1.0,
+    "w3": 0.02,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.6235419790733815,
+    "regime": "active"
+   },
+   "1.00|0.05": {
+    "w1": 1.0,
+    "w3": 0.05,
+    "u_star": 1.0,
+    "gain_over_inaction": 0.47354197907338225,
+    "regime": "active"
+   },
+   "1.00|0.10": {
+    "w1": 1.0,
+    "w3": 0.1,
+    "u_star": 0.65,
+    "gain_over_inaction": 0.297407337131547,
+    "regime": "active"
+   },
+   "1.00|0.15": {
+    "w1": 1.0,
+    "w3": 0.15,
+    "u_star": 0.5,
+    "gain_over_inaction": 0.21901045700448052,
+    "regime": "active"
+   },
+   "1.00|0.20": {
+    "w1": 1.0,
+    "w3": 0.2,
+    "u_star": 0.4,
+    "gain_over_inaction": 0.17395712920097695,
+    "regime": "active"
+   },
+   "1.00|0.30": {
+    "w1": 1.0,
+    "w3": 0.3,
+    "u_star": 0.25,
+    "gain_over_inaction": 0.12448379565586287,
+    "regime": "active"
+   },
+   "1.00|0.40": {
+    "w1": 1.0,
+    "w3": 0.4,
+    "u_star": 0.2,
+    "gain_over_inaction": 0.09697332817742077,
+    "regime": "active"
+   }
+  },
+  "gain_range": [
+   0.004369355479804271,
+   0.6735419790733824
+  ],
+  "u_star_min": 0.05,
+  "n_inaction_optimal": 0,
+  "value_recovered": [
+   {
+    "w1": 0.2,
+    "w3": 0.2,
+    "u_star": 0.1,
+    "value_available": 0.0084,
+    "ppo_cost": 0.0,
+    "ppo_reward": -0.277,
+    "recovered_pct": 2.7,
+    "return_sd": 0.843
+   },
+   {
+    "w1": 0.4,
+    "w3": 0.2,
+    "u_star": 0.15,
+    "value_available": 0.0315,
+    "ppo_cost": 0.0006,
+    "ppo_reward": -0.5064,
+    "recovered_pct": 5.9,
+    "return_sd": 1.419
+   },
+   {
+    "w1": 0.4,
+    "w3": 0.1,
+    "u_star": 0.3,
+    "value_available": 0.0605,
+    "ppo_cost": 0.2991,
+    "ppo_reward": -0.4611,
+    "recovered_pct": 78.0,
+    "return_sd": 1.091
+   },
+   {
+    "w1": 0.4,
+    "w3": 0.05,
+    "u_star": 0.65,
+    "value_available": 0.1098,
+    "ppo_cost": 1.7907,
+    "ppo_reward": -0.395,
+    "recovered_pct": 103.2,
+    "return_sd": 0.92
+   },
+   {
+    "w1": 0.8,
+    "w3": 0.05,
+    "u_star": 0.95,
+    "value_available": 0.3406,
+    "ppo_cost": 1.8738,
+    "ppo_reward": -0.6089,
+    "recovered_pct": 106.1,
+    "return_sd": 1.708
+   }
+  ],
+  "seconds": 939.7
+ }
+}

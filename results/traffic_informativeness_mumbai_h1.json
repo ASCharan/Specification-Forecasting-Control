@@ -1,0 +1,30 @@
+{
+  "city": "Mumbai",
+  "horizon": 1,
+  "n_scored": 5614,
+  "ridge": {
+    "0.00": {
+      "rmse": 7.735312461853027,
+      "mae": 5.2943854331970215,
+      "r2": 0.9732678545995533
+    },
+    "0.30": {
+      "rmse": 7.908181190490723,
+      "mae": 5.760739803314209,
+      "r2": 0.9720596856140739
+    }
+  },
+  "cmod": {
+    "0.00": {
+      "rmse_mean": 7.657290776570638,
+      "rmse_std": 0.05092519799957121,
+      "r2_mean": 0.9738032415633002,
+      "n_seeds": 3
+    }
+  },
+  "residual_sd_ratio_test_over_train": 0.5691296458244324,
+  "sweep_valid": false,
+  "seed_noise_rmse": 0.05092519799957121,
+  "rho_to_exceed_seed_noise": null,
+  "rho_to_exceed_seed_noise_interp": null
+}

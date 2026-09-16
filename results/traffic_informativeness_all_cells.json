@@ -1,0 +1,56 @@
+[
+ {
+  "city": "Delhi",
+  "horizon": 1,
+  "seed_noise_rmse": 0.2006,
+  "gain_at_rho_030_pct": 6.44,
+  "gain_at_rho_070_pct": 34.7,
+  "threshold_rho": 0.0904,
+  "residual_sd_ratio_test_over_train": 1.183
+ },
+ {
+  "city": "Delhi",
+  "horizon": 24,
+  "seed_noise_rmse": 0.615,
+  "gain_at_rho_030_pct": 5.46,
+  "gain_at_rho_070_pct": 31.66,
+  "threshold_rho": 0.1121,
+  "residual_sd_ratio_test_over_train": 1.072
+ },
+ {
+  "city": "Mumbai",
+  "horizon": 1,
+  "seed_noise_rmse": 0.0509,
+  "gain_at_rho_030_pct": -2.23,
+  "gain_at_rho_070_pct": 0.42,
+  "threshold_rho": null,
+  "residual_sd_ratio_test_over_train": 0.569
+ },
+ {
+  "city": "Mumbai",
+  "horizon": 24,
+  "seed_noise_rmse": 0.047,
+  "gain_at_rho_030_pct": -4.16,
+  "gain_at_rho_070_pct": -2.86,
+  "threshold_rho": null,
+  "residual_sd_ratio_test_over_train": 0.543
+ },
+ {
+  "city": "Kolkata",
+  "horizon": 1,
+  "seed_noise_rmse": 0.0655,
+  "gain_at_rho_030_pct": 4.76,
+  "gain_at_rho_070_pct": 30.32,
+  "threshold_rho": 0.1032,
+  "residual_sd_ratio_test_over_train": 1.073
+ },
+ {
+  "city": "Kolkata",
+  "horizon": 24,
+  "seed_noise_rmse": 0.3957,
+  "gain_at_rho_030_pct": 6.53,
+  "gain_at_rho_070_pct": 35.33,
+  "threshold_rho": 0.0971,
+  "residual_sd_ratio_test_over_train": 1.197
+ }
+]

@@ -1,0 +1,694 @@
+{
+ "fixed_weights": {
+  "w2": 0.3,
+  "w4": 0.1,
+  "w5": 0.15
+ },
+ "action_grid": [
+  0.0,
+  0.05,
+  0.1,
+  0.15,
+  0.2,
+  0.25,
+  0.3,
+  0.35,
+  0.4,
+  0.45,
+  0.5,
+  0.55,
+  0.6,
+  0.65,
+  0.7,
+  0.75,
+  0.8,
+  0.85,
+  0.9,
+  0.95,
+  1.0
+ ],
+ "episodes_per_point": 3,
+ "episode_hours": 168,
+ "eval_seed_base": 90000,
+ "grid": {
+  "0.20|0.01": {
+   "w1": 0.2,
+   "w3": 0.01,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.14663718008279722,
+   "reward_at_zero": -0.28760335361551126,
+   "gain_over_inaction": 0.14096617353271404,
+   "regime": "active"
+  },
+  "0.20|0.02": {
+   "w1": 0.2,
+   "w3": 0.02,
+   "u_star": 0.7,
+   "reward_at_u_star": -0.18293324559368795,
+   "reward_at_zero": -0.28760335361551126,
+   "gain_over_inaction": 0.1046701080218233,
+   "regime": "active"
+  },
+  "0.20|0.05": {
+   "w1": 0.2,
+   "w3": 0.05,
+   "u_star": 0.4,
+   "reward_at_u_star": -0.22825906643798488,
+   "reward_at_zero": -0.28760335361551126,
+   "gain_over_inaction": 0.05934428717752638,
+   "regime": "active"
+  },
+  "0.20|0.10": {
+   "w1": 0.2,
+   "w3": 0.1,
+   "u_star": 0.25,
+   "reward_at_u_star": -0.2567361361568418,
+   "reward_at_zero": -0.28760335361551126,
+   "gain_over_inaction": 0.030867217458669438,
+   "regime": "active"
+  },
+  "0.20|0.15": {
+   "w1": 0.2,
+   "w3": 0.15,
+   "u_star": 0.2,
+   "reward_at_u_star": -0.27099311950505883,
+   "reward_at_zero": -0.28760335361551126,
+   "gain_over_inaction": 0.016610234110452426,
+   "regime": "active"
+  },
+  "0.20|0.20": {
+   "w1": 0.2,
+   "w3": 0.2,
+   "u_star": 0.1,
+   "reward_at_u_star": -0.27565259291620237,
+   "reward_at_zero": -0.28760335361551126,
+   "gain_over_inaction": 0.011950760699308893,
+   "regime": "active"
+  },
+  "0.20|0.30": {
+   "w1": 0.2,
+   "w3": 0.3,
+   "u_star": 0.05,
+   "reward_at_u_star": -0.2801043403742774,
+   "reward_at_zero": -0.28760335361551126,
+   "gain_over_inaction": 0.007499013241233865,
+   "regime": "active"
+  },
+  "0.20|0.40": {
+   "w1": 0.2,
+   "w3": 0.4,
+   "u_star": 0.05,
+   "reward_at_u_star": -0.2813543403742776,
+   "reward_at_zero": -0.28760335361551126,
+   "gain_over_inaction": 0.00624901324123367,
+   "regime": "active"
+  },
+  "0.30|0.01": {
+   "w1": 0.3,
+   "w3": 0.01,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.19324638534423252,
+   "reward_at_zero": -0.40925977986954615,
+   "gain_over_inaction": 0.21601339452531362,
+   "regime": "active"
+  },
+  "0.30|0.02": {
+   "w1": 0.3,
+   "w3": 0.02,
+   "u_star": 0.85,
+   "reward_at_u_star": -0.24234207821997983,
+   "reward_at_zero": -0.40925977986954615,
+   "gain_over_inaction": 0.16691770164956632,
+   "regime": "active"
+  },
+  "0.30|0.05": {
+   "w1": 0.3,
+   "w3": 0.05,
+   "u_star": 0.45,
+   "reward_at_u_star": -0.3095913026449431,
+   "reward_at_zero": -0.40925977986954615,
+   "gain_over_inaction": 0.09966847722460304,
+   "regime": "active"
+  },
+  "0.30|0.10": {
+   "w1": 0.3,
+   "w3": 0.1,
+   "u_star": 0.35,
+   "reward_at_u_star": -0.3480168463956279,
+   "reward_at_zero": -0.40925977986954615,
+   "gain_over_inaction": 0.06124293347391824,
+   "regime": "active"
+  },
+  "0.30|0.15": {
+   "w1": 0.3,
+   "w3": 0.15,
+   "u_star": 0.25,
+   "reward_at_u_star": -0.36846652396312995,
+   "reward_at_zero": -0.40925977986954615,
+   "gain_over_inaction": 0.04079325590641619,
+   "regime": "active"
+  },
+  "0.30|0.20": {
+   "w1": 0.3,
+   "w3": 0.2,
+   "u_star": 0.2,
+   "reward_at_u_star": -0.3817261985076457,
+   "reward_at_zero": -0.40925977986954615,
+   "gain_over_inaction": 0.027533581361900428,
+   "regime": "active"
+  },
+  "0.30|0.30": {
+   "w1": 0.3,
+   "w3": 0.3,
+   "u_star": 0.1,
+   "reward_at_u_star": -0.3913335860601447,
+   "reward_at_zero": -0.40925977986954615,
+   "gain_over_inaction": 0.01792619380940147,
+   "regime": "active"
+  },
+  "0.30|0.40": {
+   "w1": 0.3,
+   "w3": 0.4,
+   "u_star": 0.1,
+   "reward_at_u_star": -0.3963335860601447,
+   "reward_at_zero": -0.40925977986954615,
+   "gain_over_inaction": 0.012926193809401465,
+   "regime": "active"
+  },
+  "0.40|0.01": {
+   "w1": 0.4,
+   "w3": 0.01,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.23985559060566852,
+   "reward_at_zero": -0.5309162061235804,
+   "gain_over_inaction": 0.29106061551791185,
+   "regime": "active"
+  },
+  "0.40|0.02": {
+   "w1": 0.4,
+   "w3": 0.02,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.28985559060566857,
+   "reward_at_zero": -0.5309162061235804,
+   "gain_over_inaction": 0.2410606155179118,
+   "regime": "active"
+  },
+  "0.40|0.05": {
+   "w1": 0.4,
+   "w3": 0.05,
+   "u_star": 0.65,
+   "reward_at_u_star": -0.37793870437406907,
+   "reward_at_zero": -0.5309162061235804,
+   "gain_over_inaction": 0.1529775017495113,
+   "regime": "active"
+  },
+  "0.40|0.10": {
+   "w1": 0.4,
+   "w3": 0.1,
+   "u_star": 0.4,
+   "reward_at_u_star": -0.43515545382703374,
+   "reward_at_zero": -0.5309162061235804,
+   "gain_over_inaction": 0.09576075229654663,
+   "regime": "active"
+  },
+  "0.40|0.15": {
+   "w1": 0.4,
+   "w3": 0.15,
+   "u_star": 0.3,
+   "reward_at_u_star": -0.4627719833872271,
+   "reward_at_zero": -0.5309162061235804,
+   "gain_over_inaction": 0.06814422273635329,
+   "regime": "active"
+  },
+  "0.40|0.20": {
+   "w1": 0.4,
+   "w3": 0.2,
+   "u_star": 0.25,
+   "reward_at_u_star": -0.4801969117694189,
+   "reward_at_zero": -0.5309162061235804,
+   "gain_over_inaction": 0.05071929435416145,
+   "regime": "active"
+  },
+  "0.40|0.30": {
+   "w1": 0.4,
+   "w3": 0.3,
+   "u_star": 0.15,
+   "reward_at_u_star": -0.5000892827100267,
+   "reward_at_zero": -0.5309162061235804,
+   "gain_over_inaction": 0.030826923413553642,
+   "regime": "active"
+  },
+  "0.40|0.40": {
+   "w1": 0.4,
+   "w3": 0.4,
+   "u_star": 0.1,
+   "reward_at_u_star": -0.507014579204087,
+   "reward_at_zero": -0.5309162061235804,
+   "gain_over_inaction": 0.02390162691949338,
+   "regime": "active"
+  },
+  "0.50|0.01": {
+   "w1": 0.5,
+   "w3": 0.01,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.286464795867104,
+   "reward_at_zero": -0.6525726323776156,
+   "gain_over_inaction": 0.36610783651051165,
+   "regime": "active"
+  },
+  "0.50|0.02": {
+   "w1": 0.5,
+   "w3": 0.02,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.33646479586710404,
+   "reward_at_zero": -0.6525726323776156,
+   "gain_over_inaction": 0.3161078365105116,
+   "regime": "active"
+  },
+  "0.50|0.05": {
+   "w1": 0.5,
+   "w3": 0.05,
+   "u_star": 0.65,
+   "reward_at_u_star": -0.4437332066917891,
+   "reward_at_zero": -0.6525726323776156,
+   "gain_over_inaction": 0.20883942568582653,
+   "regime": "active"
+  },
+  "0.50|0.10": {
+   "w1": 0.5,
+   "w3": 0.1,
+   "u_star": 0.4,
+   "reward_at_u_star": -0.518603647521558,
+   "reward_at_zero": -0.6525726323776156,
+   "gain_over_inaction": 0.13396898485605768,
+   "regime": "active"
+  },
+  "0.50|0.15": {
+   "w1": 0.5,
+   "w3": 0.15,
+   "u_star": 0.35,
+   "reward_at_u_star": -0.5535917137503934,
+   "reward_at_zero": -0.6525726323776156,
+   "gain_over_inaction": 0.09898091862722225,
+   "regime": "active"
+  },
+  "0.50|0.20": {
+   "w1": 0.5,
+   "w3": 0.2,
+   "u_star": 0.25,
+   "reward_at_u_star": -0.5763022995757074,
+   "reward_at_zero": -0.6525726323776156,
+   "gain_over_inaction": 0.0762703328019082,
+   "regime": "active"
+  },
+  "0.50|0.30": {
+   "w1": 0.5,
+   "w3": 0.3,
+   "u_star": 0.2,
+   "reward_at_u_star": -0.6031923565128202,
+   "reward_at_zero": -0.6525726323776156,
+   "gain_over_inaction": 0.04938027586479543,
+   "regime": "active"
+  },
+  "0.50|0.40": {
+   "w1": 0.5,
+   "w3": 0.4,
+   "u_star": 0.15,
+   "reward_at_u_star": -0.6169260144504317,
+   "reward_at_zero": -0.6525726323776156,
+   "gain_over_inaction": 0.03564661792718393,
+   "regime": "active"
+  },
+  "0.60|0.01": {
+   "w1": 0.6,
+   "w3": 0.01,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.3330740011285402,
+   "reward_at_zero": -0.7742290586316501,
+   "gain_over_inaction": 0.44115505750310996,
+   "regime": "active"
+  },
+  "0.60|0.02": {
+   "w1": 0.6,
+   "w3": 0.02,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.38307400112853957,
+   "reward_at_zero": -0.7742290586316501,
+   "gain_over_inaction": 0.3911550575031106,
+   "regime": "active"
+  },
+  "0.60|0.05": {
+   "w1": 0.6,
+   "w3": 0.05,
+   "u_star": 0.7,
+   "reward_at_u_star": -0.5072324006478717,
+   "reward_at_zero": -0.7742290586316501,
+   "gain_over_inaction": 0.2669966579837785,
+   "regime": "active"
+  },
+  "0.60|0.10": {
+   "w1": 0.6,
+   "w3": 0.1,
+   "u_star": 0.45,
+   "reward_at_u_star": -0.5990141367234461,
+   "reward_at_zero": -0.7742290586316501,
+   "gain_over_inaction": 0.1752149219082041,
+   "regime": "active"
+  },
+  "0.60|0.15": {
+   "w1": 0.6,
+   "w3": 0.15,
+   "u_star": 0.35,
+   "reward_at_u_star": -0.6410666474277764,
+   "reward_at_zero": -0.7742290586316501,
+   "gain_over_inaction": 0.13316241120387373,
+   "regime": "active"
+  },
+  "0.60|0.20": {
+   "w1": 0.6,
+   "w3": 0.2,
+   "u_star": 0.3,
+   "reward_at_u_star": -0.6686523019111622,
+   "reward_at_zero": -0.7742290586316501,
+   "gain_over_inaction": 0.10557675672048794,
+   "regime": "active"
+  },
+  "0.60|0.30": {
+   "w1": 0.6,
+   "w3": 0.3,
+   "u_star": 0.25,
+   "reward_at_u_star": -0.7036576873819956,
+   "reward_at_zero": -0.7742290586316501,
+   "gain_over_inaction": 0.07057137124965451,
+   "regime": "active"
+  },
+  "0.60|0.40": {
+   "w1": 0.6,
+   "w3": 0.4,
+   "u_star": 0.15,
+   "reward_at_u_star": -0.7225127461908375,
+   "reward_at_zero": -0.7742290586316501,
+   "gain_over_inaction": 0.05171631244081265,
+   "regime": "active"
+  },
+  "0.70|0.01": {
+   "w1": 0.7,
+   "w3": 0.01,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.37968320638997516,
+   "reward_at_zero": -0.8958854848856848,
+   "gain_over_inaction": 0.5162022784957097,
+   "regime": "active"
+  },
+  "0.70|0.02": {
+   "w1": 0.7,
+   "w3": 0.02,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.4296832063899749,
+   "reward_at_zero": -0.8958854848856848,
+   "gain_over_inaction": 0.46620227849570983,
+   "regime": "active"
+  },
+  "0.70|0.05": {
+   "w1": 0.7,
+   "w3": 0.05,
+   "u_star": 0.8,
+   "reward_at_u_star": -0.5661391414518102,
+   "reward_at_zero": -0.8958854848856848,
+   "gain_over_inaction": 0.32974634343387454,
+   "regime": "active"
+  },
+  "0.70|0.10": {
+   "w1": 0.7,
+   "w3": 0.1,
+   "u_star": 0.5,
+   "reward_at_u_star": -0.6765922898052373,
+   "reward_at_zero": -0.8958854848856848,
+   "gain_over_inaction": 0.21929319508044742,
+   "regime": "active"
+  },
+  "0.70|0.15": {
+   "w1": 0.7,
+   "w3": 0.15,
+   "u_star": 0.4,
+   "reward_at_u_star": -0.7255000349106063,
+   "reward_at_zero": -0.8958854848856848,
+   "gain_over_inaction": 0.17038544997507843,
+   "regime": "active"
+  },
+  "0.70|0.20": {
+   "w1": 0.7,
+   "w3": 0.2,
+   "u_star": 0.35,
+   "reward_at_u_star": -0.7591665811051596,
+   "reward_at_zero": -0.8958854848856848,
+   "gain_over_inaction": 0.1367189037805252,
+   "regime": "active"
+  },
+  "0.70|0.30": {
+   "w1": 0.7,
+   "w3": 0.3,
+   "u_star": 0.25,
+   "reward_at_u_star": -0.7997630751882847,
+   "reward_at_zero": -0.8958854848856848,
+   "gain_over_inaction": 0.09612240969740005,
+   "regime": "active"
+  },
+  "0.70|0.40": {
+   "w1": 0.7,
+   "w3": 0.4,
+   "u_star": 0.2,
+   "reward_at_u_star": -0.8246585145179943,
+   "reward_at_zero": -0.8958854848856848,
+   "gain_over_inaction": 0.07122697036769043,
+   "regime": "active"
+  },
+  "0.80|0.01": {
+   "w1": 0.8,
+   "w3": 0.01,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.4262924116514112,
+   "reward_at_zero": -1.0175419111397186,
+   "gain_over_inaction": 0.5912494994883074,
+   "regime": "active"
+  },
+  "0.80|0.02": {
+   "w1": 0.8,
+   "w3": 0.02,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.4762924116514109,
+   "reward_at_zero": -1.0175419111397186,
+   "gain_over_inaction": 0.5412494994883077,
+   "regime": "active"
+  },
+  "0.80|0.05": {
+   "w1": 0.8,
+   "w3": 0.05,
+   "u_star": 0.85,
+   "reward_at_u_star": -0.6215099128375826,
+   "reward_at_zero": -1.0175419111397186,
+   "gain_over_inaction": 0.396031998302136,
+   "regime": "active"
+  },
+  "0.80|0.10": {
+   "w1": 0.8,
+   "w3": 0.1,
+   "u_star": 0.65,
+   "reward_at_u_star": -0.7467417136449508,
+   "reward_at_zero": -1.0175419111397186,
+   "gain_over_inaction": 0.2708001974947678,
+   "regime": "active"
+  },
+  "0.80|0.15": {
+   "w1": 0.8,
+   "w3": 0.15,
+   "u_star": 0.45,
+   "reward_at_u_star": -0.8088376927757815,
+   "reward_at_zero": -1.0175419111397186,
+   "gain_over_inaction": 0.20870421836393704,
+   "regime": "active"
+  },
+  "0.80|0.20": {
+   "w1": 0.8,
+   "w3": 0.2,
+   "u_star": 0.35,
+   "reward_at_u_star": -0.8466415147825429,
+   "reward_at_zero": -1.0175419111397186,
+   "gain_over_inaction": 0.1709003963571757,
+   "regime": "active"
+  },
+  "0.80|0.30": {
+   "w1": 0.8,
+   "w3": 0.3,
+   "u_star": 0.25,
+   "reward_at_u_star": -0.8958684629945729,
+   "reward_at_zero": -1.0175419111397186,
+   "gain_over_inaction": 0.12167344814514569,
+   "regime": "active"
+  },
+  "0.80|0.40": {
+   "w1": 0.8,
+   "w3": 0.4,
+   "u_star": 0.2,
+   "reward_at_u_star": -0.9253915935205812,
+   "reward_at_zero": -1.0175419111397186,
+   "gain_over_inaction": 0.09215031761913739,
+   "regime": "active"
+  },
+  "0.90|0.01": {
+   "w1": 0.9,
+   "w3": 0.01,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.4729016169128462,
+   "reward_at_zero": -1.1391983373937549,
+   "gain_over_inaction": 0.6662967204809087,
+   "regime": "active"
+  },
+  "0.90|0.02": {
+   "w1": 0.9,
+   "w3": 0.02,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.5229016169128468,
+   "reward_at_zero": -1.1391983373937549,
+   "gain_over_inaction": 0.6162967204809081,
+   "regime": "active"
+  },
+  "0.90|0.05": {
+   "w1": 0.9,
+   "w3": 0.05,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.6729016169128462,
+   "reward_at_zero": -1.1391983373937549,
+   "gain_over_inaction": 0.46629672048090864,
+   "regime": "active"
+  },
+  "0.90|0.10": {
+   "w1": 0.9,
+   "w3": 0.1,
+   "u_star": 0.65,
+   "reward_at_u_star": -0.8125362159626703,
+   "reward_at_zero": -1.1391983373937549,
+   "gain_over_inaction": 0.32666212143108453,
+   "regime": "active"
+  },
+  "0.90|0.15": {
+   "w1": 0.9,
+   "w3": 0.15,
+   "u_star": 0.45,
+   "reward_at_u_star": -0.8884369708019505,
+   "reward_at_zero": -1.1391983373937549,
+   "gain_over_inaction": 0.25076136659180437,
+   "regime": "active"
+  },
+  "0.90|0.20": {
+   "w1": 0.9,
+   "w3": 0.2,
+   "u_star": 0.4,
+   "reward_at_u_star": -0.9323964222996556,
+   "reward_at_zero": -1.1391983373937549,
+   "gain_over_inaction": 0.2068019150940993,
+   "regime": "active"
+  },
+  "0.90|0.30": {
+   "w1": 0.9,
+   "w3": 0.3,
+   "u_star": 0.3,
+   "reward_at_u_star": -0.988722779697066,
+   "reward_at_zero": -1.1391983373937549,
+   "gain_over_inaction": 0.15047555769668886,
+   "regime": "active"
+  },
+  "0.90|0.40": {
+   "w1": 0.9,
+   "w3": 0.4,
+   "u_star": 0.25,
+   "reward_at_u_star": -1.023223850800861,
+   "reward_at_zero": -1.1391983373937549,
+   "gain_over_inaction": 0.11597448659289378,
+   "regime": "active"
+  },
+  "1.00|0.01": {
+   "w1": 1.0,
+   "w3": 0.01,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.5195108221742823,
+   "reward_at_zero": -1.2608547636477885,
+   "gain_over_inaction": 0.7413439414735061,
+   "regime": "active"
+  },
+  "1.00|0.02": {
+   "w1": 1.0,
+   "w3": 0.02,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.5695108221742821,
+   "reward_at_zero": -1.2608547636477885,
+   "gain_over_inaction": 0.6913439414735064,
+   "regime": "active"
+  },
+  "1.00|0.05": {
+   "w1": 1.0,
+   "w3": 0.05,
+   "u_star": 1.0,
+   "reward_at_u_star": -0.7195108221742819,
+   "reward_at_zero": -1.2608547636477885,
+   "gain_over_inaction": 0.5413439414735066,
+   "regime": "active"
+  },
+  "1.00|0.10": {
+   "w1": 1.0,
+   "w3": 0.1,
+   "u_star": 0.65,
+   "reward_at_u_star": -0.8783307182803913,
+   "reward_at_zero": -1.2608547636477885,
+   "gain_over_inaction": 0.38252404536739715,
+   "regime": "active"
+  },
+  "1.00|0.15": {
+   "w1": 1.0,
+   "w3": 0.15,
+   "u_star": 0.5,
+   "reward_at_u_star": -0.9668472031574245,
+   "reward_at_zero": -1.2608547636477885,
+   "gain_over_inaction": 0.29400756049036403,
+   "regime": "active"
+  },
+  "1.00|0.20": {
+   "w1": 1.0,
+   "w3": 0.2,
+   "u_star": 0.4,
+   "reward_at_u_star": -1.0158446159941792,
+   "reward_at_zero": -1.2608547636477885,
+   "gain_over_inaction": 0.2450101476536093,
+   "regime": "active"
+  },
+  "1.00|0.30": {
+   "w1": 1.0,
+   "w3": 0.3,
+   "u_star": 0.3,
+   "reward_at_u_star": -1.0804129389590342,
+   "reward_at_zero": -1.2608547636477885,
+   "gain_over_inaction": 0.18044182468875425,
+   "regime": "active"
+  },
+  "1.00|0.40": {
+   "w1": 1.0,
+   "w3": 0.4,
+   "u_star": 0.25,
+   "reward_at_u_star": -1.1193292386071503,
+   "reward_at_zero": -1.2608547636477885,
+   "gain_over_inaction": 0.1415255250406382,
+   "regime": "active"
+  }
+ },
+ "boundary_w3_by_w1": {
+  "0.20": 0.4,
+  "0.30": 0.4,
+  "0.40": 0.4,
+  "0.50": 0.4,
+  "0.60": 0.4,
+  "0.70": 0.4,
+  "0.80": 0.4,
+  "0.90": 0.4,
+  "1.00": 0.4
+ }
+}

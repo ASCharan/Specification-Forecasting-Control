@@ -1,0 +1,105 @@
+{
+ "city": "Delhi",
+ "analytic": {
+  "closed_form_max_deviation": 1.4210854715202004e-14,
+  "corr_with_noise": {
+   "temp_rh": -0.0028,
+   "temp_wind": 0.0004,
+   "rh_wind": 0.726
+  },
+  "corr_noiseless": {
+   "temp_rh": 7.2e-05,
+   "temp_wind": 7.2e-05,
+   "rh_wind": 1.0
+  },
+  "singular_values_noiseless": [
+   1471.9623,
+   781.2475,
+   0.0
+  ],
+  "numerical_rank_noiseless": 2,
+  "traffic_r2_on_diurnal_phasor": 0.1933
+ },
+ "h1": {
+  "templates": {
+   "n_features": 8,
+   "n_scored": 3787,
+   "columns": [
+    "temp",
+    "rh",
+    "wind",
+    "traffic",
+    "aqi_lag1",
+    "aqi_lag2",
+    "aqi_lag3",
+    "aqi_lag24"
+   ],
+   "ridge": {
+    "rmse": 26.926986694335938,
+    "mae": 15.353164672851562,
+    "r2": 0.9076347275973307
+   },
+   "cmod": {
+    "rmse_mean": 25.182236353556316,
+    "rmse_std": 0.1037552096536922,
+    "per_seed_rmse": [
+     25.046855926513672,
+     25.298934936523438,
+     25.200918197631836
+    ]
+   }
+  },
+  "fourier": {
+   "n_features": 6,
+   "n_scored": 3787,
+   "columns": [
+    "cos24",
+    "sin24",
+    "aqi_lag1",
+    "aqi_lag2",
+    "aqi_lag3",
+    "aqi_lag24"
+   ],
+   "ridge": {
+    "rmse": 27.234941482543945,
+    "mae": 15.487009048461914,
+    "r2": 0.9055099467385052
+   },
+   "cmod": {
+    "rmse_mean": 24.821299235026043,
+    "rmse_std": 0.20185915329997922,
+    "per_seed_rmse": [
+     24.541154861450195,
+     24.91383171081543,
+     25.0089111328125
+    ]
+   },
+   "delta_vs_templates_pct": -1.43
+  },
+  "lags_only": {
+   "n_features": 4,
+   "n_scored": 3787,
+   "columns": [
+    "aqi_lag1",
+    "aqi_lag2",
+    "aqi_lag3",
+    "aqi_lag24"
+   ],
+   "ridge": {
+    "rmse": 27.39949607849121,
+    "mae": 15.578312873840332,
+    "r2": 0.9043646788108578
+   },
+   "cmod": {
+    "rmse_mean": 26.25726254781087,
+    "rmse_std": 0.1904664949138726,
+    "per_seed_rmse": [
+     26.51942253112793,
+     26.179758071899414,
+     26.072607040405273
+    ]
+   },
+   "delta_vs_templates_pct": 4.27
+  }
+ }
+}
