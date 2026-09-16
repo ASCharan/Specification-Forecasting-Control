@@ -20,35 +20,6 @@ python scripts/09_reward_diagnostics.py
 python scripts/10_traffic_informativeness.py --city Delhi --horizon 24
 ```
 
-## "168 hours" and "72 hours" are simulated time, not compute time
-
-This is the single most common misreading of the figures, so it is worth being explicit.
-
-| Where it appears | What the number means |
-|---|---|
-| Fig. 6, "300 episodes of 168 hours" | Each RL episode simulates **one week of hourly time steps** (168 steps). Training runs 300 such episodes, i.e. 50,400 environment steps. |
-| Fig. 3, "final 72 hours" | A **three-day window of the test split** is plotted so the diurnal cycle is legible. Nothing is trained for 72 hours. |
-| Config `episode_hours: 168` | Simulator steps per episode. |
-
-Nothing in this project takes hours of wall clock. Measured on **one CPU core** (no GPU, `OMP_NUM_THREADS=1`), the numbers below are from an actual run:
-
-| Stage | Wall clock |
-|---|---|
-| Build all three city series from the raw parquet | 3 s |
-| Ridge / climatology / persistence / seasonal-naive | < 1 s |
-| C-Mod, one seed, Delhi h=1 (19,071 hours of data) | 21–35 s |
-| MLP-64 / MLP-128, one seed | 7–17 s |
-| LSTM, one seed | 11–32 s |
-| **PPO, one seed, 300 episodes × 168 h = 50,400 steps** | **57 s** |
-| Reward-sensitivity experiment (2 controllers) | ~2 min |
-| Dispersion-sensitivity experiment | ~1 min |
-
-Seasonal ARIMA at h=24 is the one genuinely slow component: rolling-origin 24-step forecasts at every test origin means ~3,800 model evaluations for Delhi, which takes tens of minutes on one core. Everything else is minutes.
-
-A full replication — 3 cities × 2 horizons × 5 models × up to 5 seeds, plus 3 PPO seeds and both sensitivity studies — is a few hours single-core and well under an hour on any multi-core machine.
-
----
-
 ## Repository layout
 
 ```
